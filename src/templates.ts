@@ -957,9 +957,9 @@ export function getPasswordPageTemplate(passwordCookieName: string): string {
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>访问认证 - OmniBox</title>
+  <title>访问认证 - WEBSSH</title>
   <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🌐</text></svg>">
-  <meta name="description" content="安全访问 OmniBox 代理服务">
+  <meta name="description" content="安全访问 WEBSSH 服务">
   <style>
     ${commonStyles}
     ${passwordPageStyles}
@@ -975,8 +975,8 @@ export function getPasswordPageTemplate(passwordCookieName: string): string {
       <div class="header">
         <div class="lock-icon">🔐</div>
         <h1>访问认证</h1>
-        <p class="subtitle">请输入访问密码以继续使用 OmniBox 服务</p>
-        <div class="version-badge">OmniBox v${CONFIG.VERSION}</div>
+        <p class="subtitle">请输入访问密码以继续使用 WEBSSH 服务</p>
+        <div class="version-badge">WEBSSH v${CONFIG.VERSION}</div>
       </div>
 
       <form id="passwordForm" onsubmit="submitPassword(event)">
@@ -1004,7 +1004,7 @@ export function getPasswordPageTemplate(passwordCookieName: string): string {
       </form>
 
       <div class="password-hint">
-        输入正确的访问密码即可使用代理服务
+        输入正确的访问密码即可使用 WEBSSH 服务
       </div>
     </div>
   </div>
@@ -1181,7 +1181,7 @@ export function getErrorPageTemplate(errorTitle: string, errorMessage: string, s
         <div class="error-code">${statusCode}</div>
         <h1 class="error-title">${errorTitle}</h1>
         <p class="subtitle">${errorMessage}</p>
-        <div class="version-badge">OmniBox v${CONFIG.VERSION}</div>
+        <div class="version-badge">WEBSSH v${CONFIG.VERSION}</div>
       </div>
 
       <div class="error-actions">
