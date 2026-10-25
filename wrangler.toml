@@ -11,7 +11,7 @@ preview_urls = false
 DEBUG = "false"
 
 # 日志级别：error/warn/info/debug (数字越小越严格)
-LOG_LEVEL = "warn"
+LOG_LEVEL = "error"
 
 # ==================== 安全配置 ====================
 # 代理访问密码（密钥，仅通过 Cloudflare Dashboard 添加 Secret）
